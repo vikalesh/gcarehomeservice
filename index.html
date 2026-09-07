@@ -1832,18 +1832,34 @@
     }
   </style>
 
+<!-- 1. PLACED IMMEDIATELY AFTER THE OPENING HEAD TAG -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://googletagmanager.com/gtag/js?id=AW-18429401183"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LRFZ5YYJJ">
+      gtag('config', 'AW-18429401183');
+    </script>
+
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18429401183/uLDrCOTojPAcEN-w6dNE',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1LRFZ5YYJJ');
-</script>
-
+ 
 </head>
 
 <body>
@@ -1871,8 +1887,8 @@
           </nav> -->
         </div>
         <div class="flex items-center gap-4">
-          <a href="tel:9833669649">  <span class="text-2xl sm:text-xl text-blue-600">+91 98336-69649</span></a>
-          <a href="tel:9833669649"
+          <a href="tel:9833669649" onclick="return gtag_report_conversion('tel:9833669649');" >  <span class="text-2xl sm:text-xl text-blue-600">+91 98336-69649</span></a>
+          <a href="tel:9833669649" onclick="return gtag_report_conversion('tel:9833669649');"
             class="hidden sm:flex items-center gap-2 rounded-lg bg-neutral-900 px-6 py-3 text-sm text-white hover:bg-neutral-800">
             <i data-fa-i2svg=""><svg class="svg-inline--fa fa-phone" aria-hidden="true" focusable="false"
                 data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -1909,7 +1925,7 @@
               Expert technicians for all brands (LG, Samsung, Whirlpool). No hidden costs. 90-day service warranty.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="tel:9833669649"
+              <a href="tel:9833669649" onclick="return gtag_report_conversion('tel:9833669649');"
                 class="flex items-center justify-center gap-2 rounded-lg bg-neutral-900 px-8 py-4 text-base text-white hover:bg-neutral-800">
                 <!-- <i data-fa-i2svg=""><svg class="svg-inline--fa fa-wrench" aria-hidden="true" focusable="false"
                     data-prefix="fas" data-icon="wrench" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -1921,7 +1937,7 @@
                  <span>+91 98336-69649</span> 
                  <!-- <span> Book a Repair</span>  -->
                 </a>
-              <a href="tel:9833669649"
+              <a href="tel:9833669649" onclick="return gtag_report_conversion('tel:9833669649');"
                 class="flex items-center justify-center gap-2 rounded-lg border-2 border-neutral-900 px-8 py-4 text-base text-neutral-900 hover:bg-neutral-50">
                 <i data-fa-i2svg=""><svg class="svg-inline--fa fa-whatsapp" aria-hidden="true" focusable="false"
                     data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg"
